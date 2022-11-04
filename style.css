@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(225, 100%, 94%);
+}
+.card-container{
+    width: 22rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(56, 41, 224, 0.199) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+}
+#illustration-hero{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 2rem;
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+p{
+    padding: 0rem 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+.annual-plans{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+.icon-and-price{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+button{
+    display: block;
+    margin: 2rem auto;
+    width: 18rem;
+    border-radius: 10px;
+    height: 2.5rem;
+    border: none;
+    background-color: rgb(56, 41, 224);
+    color: white;
+    font-weight: 700;
+    /* box-shadow: rgb(56 41 224) 0px 3px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px; */
+    box-shadow: rgba(56, 41, 224, 0.295) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+}
+button:hover{
+    opacity: 75%;
+    cursor: pointer;
+}
+h2{
+    color: hsl(223, 47%, 23%);
+    font-size: 1rem;
+    font-weight: 900;
+}
+h3{
+    color: hsl(224, 23%, 55%);
+    margin: 3px 0rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+h4{
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
+h4:hover{
+    text-decoration: none;
+    opacity: 75%;
+    cursor: pointer;
+}
+h5{
+    text-align: center;
+    margin: -1rem 0rem 2rem 0rem;
+    color: hsl(224, 23%, 55%);
+   
+}
+h5:hover{
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width:280px) {
+    .card-container{
+        width: 17rem;
+    }
+    p{
+        padding: 0;
+    }
+    button{
+        width: 15rem;
+    }
+}
